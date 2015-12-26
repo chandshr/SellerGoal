@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandani.myapplication.GoalListActivity">
+
+    <EditText
+        android:id="@+id/goal_add_list"
+        android:hint="@string/goal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:inputType="date"
+        android:id="@+id/goal_end_list"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_below="@id/goal_add_list"
+        android:layout_alignRight="@id/goal_start"/>
+
+    <Button
+        android:id="@+id/itemView"
+        android:layout_width="0dp"
+        android:layout_weight=".6"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/goal_end"
+        android:onClick="goalActivity"
+        android:background="@color/view"
+        android:text="View"/>
+
+    <Button
+        android:id="@+id/goalDel"
+        android:layout_width="0dp"
+        android:layout_weight=".65"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/goal_end"
+        android:background="@color/delete"
+        android:text="Delete"/>
+</LinearLayout>

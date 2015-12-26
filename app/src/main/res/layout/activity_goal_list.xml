@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GoalListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textAutoCorrect"
+            android:id="@+id/goal_add"
+            android:hint="@string/goal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/amount_add"
+            android:hint="@string/amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/goal_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:background="@color/start"
+            android:onClick="setStart"/>
+
+        <Button
+            android:id="@+id/goal_end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Deadline"
+            android:background="@color/deadline"
+            android:onClick="setEnd" />
+
+        <Button
+            android:id="@+id/goal_add_btn"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:background="@color/add"
+            android:onClick="addGoal"
+            android:text="Add" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/lightblue"/>
+        <TextView
+            android:textColor="@color/text"
+            android:layout_width="match_parent"
+            android:text="List of goals with name and deadline displayed below. "
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/lightblue"/>
+        <TextView
+            android:textColor="@color/text"
+            android:layout_width="match_parent"
+            android:text="Note: text in blue are editable, text with background colors are buttons and add text in text boxes where texts are in grey"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

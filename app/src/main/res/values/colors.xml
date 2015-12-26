@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lightblue" type="color">#c5eaf8</item>
+    <item name="titlebackgroundcolor" type="color">#0099cc</item>
+    <item name="darkblue" type="color">#0fa1d3</item>
+    <item name="lightpurple" type="color">#a1a5e0</item>
+    <item name="green" type="color">#5BC85B</item>
+    <item name="darkgreen" type="color">#006400</item>
+    <item name="pink" type="color">#EE90EE</item>
+    <item name="darkpink" type="color">#cb1577</item>
+    <item name="yellow" type="color">#FFFF00</item>
+    <item name="red" type="color">#ff0000</item>
+    <item name="lightGrey" type="color">#a8a8a8</item>
+    <item name="grey" type="color">#696969</item>
+    <item name="view" type="color">#e1e3b8</item>
+    <item name="delete" type="color">#e3b8e1</item>
+    <item name="text" type="color">#ec84b7</item>
+    <item name="add" type="color">#b8e3d0</item>
+    <item name="start" type="color">#b8cce3</item>
+    <item name="deadline" type="color">#e3bab8</item>
+</resources>

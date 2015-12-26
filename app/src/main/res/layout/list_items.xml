@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chandani.android.salesgoal.activity.GoalActivity">
+
+    <EditText
+        android:inputType="textAutoCorrect"
+        android:id="@+id/item"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:hint="@string/item"
+        android:selectAllOnFocus="true" />
+
+    <EditText android:id="@+id/price"
+        android:inputType="numberDecimal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:selectAllOnFocus="true" />
+
+    <EditText android:id="@+id/plan_count"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="@string/count"
+        android:selectAllOnFocus="true" />
+
+    <!-- GOAL DEL BTN -->
+    <Button
+        android:id="@+id/item_del_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@color/delete"
+        android:onClick="delRequire"
+        android:text="Delete"
+        android:src="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>
